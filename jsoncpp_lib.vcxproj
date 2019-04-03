@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{44BEEC21-FF07-38B9-903A-D7E55498E0AB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>jsoncpp_lib</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jsoncpp_lib.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jsoncppd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jsoncpp_lib.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jsoncpp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\swq123459\Desktop\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">jsoncpp_lib.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">jsoncpp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\swq123459\Desktop\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">jsoncpp_lib.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">jsoncpp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\include\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\jsoncpp\src\lib_json\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GitHub\jsoncpp\src\lib_json\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/GitHub/jsoncpp/src/lib_json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"F:\Program Files (x86)\Cmakekit\bin\cmake.exe" -SD:/GitHub/jsoncpp/src/lib_json -BC:/Users/swq123459/Desktop --check-stamp-file C:/Users/swq123459/Desktop/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/GitHub/jsoncpp/src/lib_json/CMakeLists.txt;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeCCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeCXXCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeRCCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeSystem.cmake;C:\Users\swq123459\Desktop\CMakeFiles\feature_tests.c;C:\Users\swq123459\Desktop\CMakeFiles\feature_tests.cxx;D:\GitHub\jsoncpp\src\lib_json\CMakeLists.txt;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCCompilerABI.c;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeRCInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystem.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCXXSymbolExists.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckIncludeFile.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckStructHasMember.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckSymbolExists.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckTypeSize.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\GitHub\jsoncpp\src\lib_json\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\swq123459\Desktop\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/GitHub/jsoncpp/src/lib_json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"F:\Program Files (x86)\Cmakekit\bin\cmake.exe" -SD:/GitHub/jsoncpp/src/lib_json -BC:/Users/swq123459/Desktop --check-stamp-file C:/Users/swq123459/Desktop/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/GitHub/jsoncpp/src/lib_json/CMakeLists.txt;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeCCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeCXXCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeRCCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeSystem.cmake;C:\Users\swq123459\Desktop\CMakeFiles\feature_tests.c;C:\Users\swq123459\Desktop\CMakeFiles\feature_tests.cxx;D:\GitHub\jsoncpp\src\lib_json\CMakeLists.txt;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCCompilerABI.c;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeRCInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystem.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCXXSymbolExists.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckIncludeFile.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckStructHasMember.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckSymbolExists.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckTypeSize.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\GitHub\jsoncpp\src\lib_json\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\swq123459\Desktop\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/GitHub/jsoncpp/src/lib_json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"F:\Program Files (x86)\Cmakekit\bin\cmake.exe" -SD:/GitHub/jsoncpp/src/lib_json -BC:/Users/swq123459/Desktop --check-stamp-file C:/Users/swq123459/Desktop/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/GitHub/jsoncpp/src/lib_json/CMakeLists.txt;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeCCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeCXXCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeRCCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeSystem.cmake;C:\Users\swq123459\Desktop\CMakeFiles\feature_tests.c;C:\Users\swq123459\Desktop\CMakeFiles\feature_tests.cxx;D:\GitHub\jsoncpp\src\lib_json\CMakeLists.txt;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCCompilerABI.c;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeRCInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystem.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCXXSymbolExists.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckIncludeFile.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckStructHasMember.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckSymbolExists.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckTypeSize.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\GitHub\jsoncpp\src\lib_json\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\swq123459\Desktop\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/GitHub/jsoncpp/src/lib_json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"F:\Program Files (x86)\Cmakekit\bin\cmake.exe" -SD:/GitHub/jsoncpp/src/lib_json -BC:/Users/swq123459/Desktop --check-stamp-file C:/Users/swq123459/Desktop/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/GitHub/jsoncpp/src/lib_json/CMakeLists.txt;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeCCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeCXXCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeRCCompiler.cmake;C:\Users\swq123459\Desktop\CMakeFiles\3.14.1\CMakeSystem.cmake;C:\Users\swq123459\Desktop\CMakeFiles\feature_tests.c;C:\Users\swq123459\Desktop\CMakeFiles\feature_tests.cxx;D:\GitHub\jsoncpp\src\lib_json\CMakeLists.txt;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCCompilerABI.c;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeRCInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystem.cmake.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckCXXSymbolExists.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckIncludeFile.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckStructHasMember.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckSymbolExists.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CheckTypeSize.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\Windows.cmake;F:\Program Files (x86)\Cmakekit\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\GitHub\jsoncpp\src\lib_json\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\swq123459\Desktop\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\GitHub\jsoncpp\include\json\config.h" />
+    <ClInclude Include="D:\GitHub\jsoncpp\include\json\forwards.h" />
+    <ClInclude Include="D:\GitHub\jsoncpp\include\json\features.h" />
+    <ClInclude Include="D:\GitHub\jsoncpp\include\json\value.h" />
+    <ClInclude Include="D:\GitHub\jsoncpp\include\json\reader.h" />
+    <ClInclude Include="D:\GitHub\jsoncpp\include\json\writer.h" />
+    <ClInclude Include="D:\GitHub\jsoncpp\include\json\assertions.h" />
+    <ClInclude Include="D:\GitHub\jsoncpp\include\json\version.h" />
+    <ClInclude Include="D:\GitHub\jsoncpp\src\lib_json\json_tool.h" />
+    <ClCompile Include="D:\GitHub\jsoncpp\src\lib_json\json_reader.cpp" />
+    <ClInclude Include="D:\GitHub\jsoncpp\src\lib_json\json_valueiterator.inl" />
+    <ClCompile Include="D:\GitHub\jsoncpp\src\lib_json\json_value.cpp" />
+    <ClCompile Include="D:\GitHub\jsoncpp\src\lib_json\json_writer.cpp" />
+    <ClInclude Include="D:\GitHub\jsoncpp\src\lib_json\version.h.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\swq123459\Desktop\ZERO_CHECK.vcxproj">
+      <Project>{503BA5E4-E5B0-375D-9C6C-D45FFB66E185}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
